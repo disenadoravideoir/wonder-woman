@@ -1,0 +1,49 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="`$vW/m/w2_/D%A-)U-SI">Player</variable><variable type="KIND_SpriteKind" id="iR=A^{lNPyYhvk**PyTN">Projectile</variable><variable type="KIND_SpriteKind" id="SFu^ffDGIGm(]+Za1,{k">Food</variable><variable type="KIND_SpriteKind" id=".VOH]mVY.TlD},d`}LBU">Enemy</variable><variable id=";GKc`d1DXN4^z8Ep#t/m">wonder woman</variable><variable id="#2M)Dws~AH1`vLAOm1^3">mySprite</variable></variables><block type="pxt-on-start" id="Jx_mZuBt,cJKzBTej(d]" x="50" y="-50"><statement name="HANDLER"><block type="gameSplash" id="_gx1aH@k9,6BGK+Rhv?`"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><shadow type="text" id="jNB^6kB^NQ{O2~/XS|Ry"><field name="TEXT">hola, bienvenido a el laberinto de wonder woman </field></shadow></value><next><block type="variables_set" id="0X[EM%$yK|EJ3PqcqI_y"><field name="VAR" id=";GKc`d1DXN4^z8Ep#t/m">wonder woman</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="q=^8o7I8o}B[%vc5JnV]"><value name="img"><shadow type="screen_image_picker" id="?D;F*.oYL-xLVnx]o-qr"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . f f 5 f f . . . . . . 
+. . . . f f 5 2 5 f f . . . . . 
+. . . f f 2 2 2 2 2 f f . . . . 
+. . . f f d d d d d f f . . . . 
+. . . f f d f d f d f f . . . . 
+. . . f f d d d d d f f . . . . 
+. . f f f f d d d f f f f . . . 
+. f f f f d 2 2 2 d f f f f . . 
+. f f f f 5 2 5 2 5 f f f f . . 
+. . f f f d 8 8 8 d f f f . . . 
+. . . f f d 8 8 8 d f f . . . . 
+. . . . . . d . d . . . . . . . 
+. . . . . . d . d . . . . . . . 
+. . . . . . 2 . 2 . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="F5Cko*fVJDqq,;hA`;I]"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="wX]HP@8ZfCqo*~vinSK."><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="6/yeEc;,.~XA2$:A{Yfg"><field name="VAR" id=";GKc`d1DXN4^z8Ep#t/m">wonder woman</field></block></value><value name="vx"><shadow type="math_number" id="o6#:-*+#2%=_)j4{yg{c"><field name="NUM">150</field></shadow></value><value name="vy"><shadow type="math_number" id="_@o~fk_%8]j;QLKW+(Pz"><field name="NUM">150</field></shadow></value><next><block type="gamesetbackgroundcolor" id="?_aeN[1).7`xDh#KU%O4"><value name="color"><shadow type="colorindexpicker" id="{2`Ny!4V(})JB(TQU-~="><field name="index">11</field></shadow></value><next><block type="tilemap_editor" id="$L7iuP[2|C~n.bXZKh8f"><field name="tilemap">tiles.createTilemap(hex`1e001e00010101010101010101010101010101010101010100000000000101010101010101010101010101010101010101010101010100000000000101010101010101010101010101010101010101010101010101010100000101010101000000000000000000000002000000000000000000000000000101010101000000000000000000000000000000000000000000000000000101010101010101010101010000010101010101010101010101010100000101010101010101010101010000010101010101010101010101010100000101010101010101010101010000010101010101010101010101010100000101010101010101010101010000010101010101010101010101010100000101010101010101010101010000010101010101010101010101010101010101010101010101010101010000000000000000000000000000000000000000000000010101010101010000010101010101010101010101010100000101010101010000000001010000010101010101010101010101010100000101010101010000000000000000010101010101010101010101010100000101010101010101010101010101010101010101010101010101010100000101010101010101010101010101010101010101010101010101010100000101010101010101010101010101010101010101010101010101010100000101010101010000000000000000000000000000000000000000000000000101010101010000010101010101010101010101010101010101010100000101010101010000010101010101010101010101010101010101010100000000000001010000010101010101010101010101010101010101010100000000000001010000010101010101010101010100000000000001010101010101010101010000010101010101010101010100000000000001010101010101010101010000010101010101010101010100000000000001010101010101010101010000010101010101010101010100000000000000000000000000000000010000000000000000000000000000000000010101010101010101010101010101010101010101010101010101000100000000000000000000000001010101010100000000000000000000000101010101010101010101010101010101010100010101010101010101000000000000000000000000000001010101010100010101010101010101010101010101010101010101010101`, img`
+. . . . . . . . . . . . . . . . . . . 2 . . . . . 2 . . . . 
+. . . . . . . . . . . . . . . . . . . 2 . . . . . 2 . . . . 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . 2 . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . 
+2 2 2 2 2 2 2 . . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . 2 . . . . 
+. . . . . . 2 . . 2 . . . . . . . . . . . . 2 . . 2 . . . . 
+. . . . . . 2 . . 2 . . . . . . . . . . . . 2 . . 2 . . . . 
+. . . . . . 2 . . 2 . . . . . . . . . . . . 2 . . 2 . . . . 
+. . . . . . 2 . . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+. . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . 
+2 2 2 2 2 2 2 . . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . 2 2 2 2 2 
+2 . . . . 2 2 . . 2 . . . . . . . . . . . . 2 . . 2 . . . . 
+2 . . . . . . . . 2 . . . . . . . . . . . . 2 . . 2 . . . . 
+2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . 2 . . 2 . . . . 
+. . . . . . . . . . . . . . . . . . . . . . 2 . . 2 . . . . 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . 2 . . . . 
+2 . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . 
+2 . . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . 2 2 2 2 2 
+2 . . 2 . . . . . . . . . . . . . . . . . . 2 . . . . . . 2 
+2 . . 2 . . . . . . . . . 2 2 2 2 2 2 2 2 . 2 . . . . . . 2 
+2 . . 2 . . . . . . . . . 2 . . . . . . 2 . 2 2 2 2 2 2 2 2 
+2 . . 2 . . . . . . . . . 2 . . . . . . 2 . . . . . . . . . 
+2 . . 2 . . . . . . . . . 2 . . . . . . 2 2 2 2 2 2 2 2 2 2 
+2 . . 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . . . 
+2 . . . . . . . . . . . . . . . . . 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . 2 . . . . . . . . . . . . 2 
+. . . . 2 . . . . . . . . . . . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+. . . . 2 . 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . 2 
+. . . . 2 . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+`, [myTiles.transparency16,sprites.dungeon.darkGroundNorthWest1,sprites.dungeon.collectibleBlueCrystal], TileScale.Sixteen)</field><next><block type="mapplaceonrandomtile" id="B:~!67e(xB%kqTJ[Jeu;"><value name="sprite"><block type="variables_get" id="UK?oU%Q~#2Z}$U~a7N0U"><field name="VAR" id=";GKc`d1DXN4^z8Ep#t/m">wonder woman</field></block></value><value name="tile"><shadow type="tileset_tile_picker" id="JVn|/ZW]~HdTd-Q3;6vF"><field name="tile">myTiles.transparency16</field></shadow></value><next><block type="hudChangeLifeBy" id="!]7W^~lV4U*CI:FR1/Xi"><value name="value"><shadow type="math_number" id="Sha48142Z7M+1Pp46Sk%"><field name="NUM">-1</field></shadow></value><next><block type="hudSetLife" id="T9e@g56Spt3PaOux5Fz2"><value name="value"><shadow type="math_number" id="Lgcrx[rGj4bG7GIDR?Pn"><field name="NUM">3</field></shadow></value><next><block type="camerafollow" id="Q6(60B6X5(AIJpYjdrC4"><value name="sprite"><block type="variables_get" id="|S^?v*)ZeZ]W%7vHf0yG"><field name="VAR" id=";GKc`d1DXN4^z8Ep#t/m">wonder woman</field></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="spriteshittile" id="}k^]-Ypq(5#;8OFPk:Rl" x="50" y="530"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="DcBf,5=?0g/4IsBE]c~="><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="!%?AUnb{N*R9Tz^HZ7w7"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="904i5xK*as.8l=8AG%aK"><field name="tile">sprites.dungeon.collectibleBlueCrystal</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="w=XQ(rqwyEvA}nBG$;0N"><mutation typename="tiles.Location"/><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="gameOver" id="*C|-YB[M*]M9rVfP`:nr"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="effect">effects.hearts</field><value name="win"><shadow type="toggleWinLose" id="g9?5k!,E~]bOG$U||8QD"><field name="win">true</field></shadow></value></block></statement></block><block type="keyonevent" id="w!XSwV9`WCjYb(|=P6Up" x="50" y="690"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="startEffectOnSprite" id="~/IZH*DX}v?[#S@@|}#."><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><field name="effect">effects.hearts</field><value name="sprite"><block type="variables_get" id="Vdvbp/p1TNy[43vQy+[9"><field name="VAR" id=";GKc`d1DXN4^z8Ep#t/m">wonder woman</field></block></value><value name="duration"><shadow type="timePicker" id="w$RWoDl]9s|xVY}IrVB8"><field name="ms">500</field></shadow></value></block></statement></block></xml>
